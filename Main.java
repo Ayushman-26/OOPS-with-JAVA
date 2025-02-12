@@ -1,11 +1,15 @@
 class SuperClass {
-    private String privateMember = "This is a private member";
-    public String getPrivateMember() {
-        return privateMember;
+    private String privateMember = "This is a private member";  //variable
+
+
+    public String getPrivateMember() {     //function or method
+        return privateMember;  
     }
 }
 class SubClass extends SuperClass {
-    public void display() {
+    public void display() {  
+           // function
+        //System.out.println(privateMember);
         System.out.println("Accessing private member through method: " + getPrivateMember());
     }
 }
